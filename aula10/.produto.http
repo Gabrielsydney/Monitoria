@@ -1,0 +1,33 @@
+###
+
+GET http://localhost:8080/produtos
+
+###
+
+GET http://localhost:8080/produtos/1
+
+###
+
+POST http://localhost:8080/produtos/
+Content-Type: application/json
+
+{
+    "nome": "Celular",
+    "descricao": "Branco",
+    "preco": 90,
+    "userId": 1
+}
+
+###
+
+PUT http://localhost:8080/produtos?id=15898ce2-d7f9-492f-a4f4-2c56aeb571a3
+Content-Type: application/json
+
+{
+    "nome": "Teste",
+    "descricao": "Preto",
+    "preco": 90
+}
+
+###
+DELETE http://localhost:8080/produtos?id=9aa0d7a6-a9e6-44e7-9ebc-0cdfe81767a8

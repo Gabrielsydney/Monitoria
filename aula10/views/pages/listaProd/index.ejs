@@ -1,0 +1,7 @@
+<%- contentFor('body') %>
+    <h1>Lista de Produtos</h1>
+    <ul>
+            <%  listaProd.forEach( function (produto) { %>
+                    <li><%=produto.nome%> - Preço R$<%=produto.preco.toFixed(2)%></li>
+            <% }) %>
+    </ul>
