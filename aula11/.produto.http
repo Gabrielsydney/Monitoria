@@ -1,0 +1,31 @@
+GET http://localhost:8080/api/produtos
+
+###
+
+GET http://localhost:8080/api/produtos/1
+
+###
+
+POST http://localhost:8080/api/produtos
+Content-Type: application/json
+
+{
+    "nome": "Celular",
+    "descricao": "Branco",
+    "preco": 90,
+    "userId": 1
+}
+
+###
+
+PUT http://localhost:8080/api/produtos?id=2
+Content-Type: application/json
+
+{
+    "nome": "Teste",
+    "descricao": "Preto",
+    "preco": 90
+}
+
+###
+DELETE http://localhost:8080/api/produtos?id=11
