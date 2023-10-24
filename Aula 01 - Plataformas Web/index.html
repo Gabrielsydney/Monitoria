@@ -1,66 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <title>Pet Top Store</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Pet Top Store</h1>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <a href="#">Promoção de Abril</a>
-            </div>
-            <div class="col">
-                <a href="#">Compre agora e ganhe um mordedor</a>
-            </div>
+    <div class="row">
+        <div class="col s12">
+            <h2>Registrar nova compra</h2>
         </div>
-        <div class="row">
-            <div class="col">
-                <a href="#">Indique um amigo e ganhe 5 reais</a>
-            </div>
-            <div class="col">
-                <a href="#">Compre um mordedor e ganhe um osso</a>
-            </div>
-        </div>
-        <table class="table table-striped">
-            <tr>
-                <th>Produto</th>
-                <th>Valor</th>
-                <th>Ações</th>
-            </tr>
-            <tr>
-                <td>Mordedor para cachorro</td>
-                <td>R$ 10,00</td>
-                <td>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </td>
-            </tr>
-            <tr>
-                <td>Arranhador</td>
-                <td>R$ 4,95</td>
-                <td>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </td>
-            </tr>
-            <tr>
-                <td>Osso</td>
-                <td>R$ 2,25</td>
-                <td>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </td>
-            </tr>
-        </table>
     </div>
+    <div class="row">
+        <div class="col s6">
+            <h3>Lista de produtos</h3>
+            <div class="collection">
+                <div class="collection-item">
+                    <a class="btn right" href="#">
+                        Adicionar
+                        <i class="material-icons right">send</i>
+                    </a>
+                    Ração para gatos<br />
+                    Estoque: 35
+                </div>
+                <div class="collection-item">
+                    <a class="btn right" href="#">
+                        Adicionar
+                        <i class="material-icons right">send</i>
+                    </a>
+                    Ração para cães<br />
+                    Estoque: 12
+                </div>
+                <div class="collection-item">
+                    <a class="btn right" href="#">
+                        Adicionar
+                        <i class="material-icons right">send</i>
+                    </a>
+                    Ração para ornitorrincos<br />
+                    Estoque: 20
+                </div>
+                <div class="collection-item">
+                    <a class="btn right" href="#">
+                        Adicionar
+                        <i class="material-icons right">send</i>
+                    </a>
+                    Mordedor<br />
+                    Estoque: 20
+                </div>
+                <div class="collection-item">
+                    <a class="btn right" href="#">
+                        Adicionar
+                        <i class="material-icons right">send</i>
+                    </a>
+                    Coleira<br />
+                    Estoque: 20
+                </div>
+            </div>
+        </div>
+        <div class="col s6">
+            <h3>Items adicionados</h3>
+            <div class="collection">
+                <div class="collection-item">
+                    Mordedor
+                    <span class="badge">
+                        <a href="#">
+                            <i class="material-icons" style="color: red">remove_circle</i>
+                        </a>
+                    </span>
+                </div>
+                <div class="collection-item">
+                    Ração para cães
+                    <span class="badge">
+                        <a href="#">
+                            <i class="material-icons" style="color: red">remove_circle</i>
+                        </a>
+                    </span>
+                </div>
+                <div class="collection-item">
+                    Ração para ornitorrincos
+                    <span class="badge">
+                        <a href="#">
+                            <i class="material-icons" style="color: red">remove_circle</i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="btn right" href="#">
+        Continuar compra
+        <i class="material-icons right">send</i>
+    </a>
 </body>
 
 </html>
